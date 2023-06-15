@@ -1,11 +1,10 @@
-import { MainLayout } from "@/components/layouts/MainLayout";
-import Link from "next/link";
+import Link from 'next/link';
+import { MainLayout } from '../../components/layouts/MainLayout';
 
-
-export default function PricingPage(){
+export default function ContactPage(){
     return (
         <MainLayout>
-            <h1>Pricing Page</h1>
+            <h1>Contact Page</h1>
 
             <h1 className={ 'title' }>
                 Ir a <Link href="/" >Home</Link>
@@ -13,7 +12,7 @@ export default function PricingPage(){
 
             <p className={ 'description' }>
                 Get started by editin{' '}
-                <code className={ 'code' }>pages/pricing/index.jsx</code>
+                <code className={ 'code' }>pages/contact/contact.jsx</code>
             </p>
         </MainLayout>
     )

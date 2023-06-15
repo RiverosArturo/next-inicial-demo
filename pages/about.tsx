@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { MainLayout } from '@/components/layouts/MainLayout';
-import { DarkLayout } from '@/components/layouts/DarkLayout';
+import { MainLayout } from '../components/layouts/MainLayout';
+import { DarkLayout } from '../components/layouts/DarkLayout';
 
 export default function AboutPage(){
     return (
@@ -19,7 +19,7 @@ export default function AboutPage(){
     )
 }
 
-AboutPage.getLayout = function getLayout( page ){
+AboutPage.getLayout = function getLayout( page: JSX.Element ){
     return(
         <MainLayout>
             <DarkLayout>
